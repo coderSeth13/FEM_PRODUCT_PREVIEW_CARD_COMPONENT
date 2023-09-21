@@ -1,0 +1,216 @@
+:root {
+  --clr-primary-hsl-800: 30, 38%, 92%;
+  --clr-primary-hsl-300: 158, 36%, 37%;
+  --clr-primary-hsl-100: 158, 35%, 18%;
+
+  --clr-secondary-hsl-900: 0, 0%, 100%;
+  --clr-secondary-hsl-400: 228, 12%, 48%;
+  --clr-secondary-hsl-100: 212, 21%, 14%;
+
+  --clr-primary-800: hsl(var(--clr-primary-hsl-800));
+  --clr-primary-300: hsl(var(--clr-primary-hsl-300));
+  --clr-primary-100: hsl(var(--clr-primary-hsl-100));
+
+  --clr-secondary-900: hsl(var(--clr-secondary-hsl-900));
+  --clr-secondary-400: hsl(var(--clr-secondary-hsl-400));
+  --clr-secondary-100: hsl(var(--clr-secondary-hsl-100));
+
+  --clr-btn: var(--clr-secondary-900);
+  --clr-bg-btn: var(--clr-primary-300);
+  --clr-bg-btn-hover: var(--clr-primary-100);
+  --clr-heading-1: var(--clr-secondary-100);
+  --clr-heading-2: var(--clr-secondary-400);
+  --clr-text: var(--clr-secondary-400);
+  --clr-bg-card: var(--clr-secondary-900);
+  --clr-bg-body: var(--clr-primary-800);
+  --clr-main-price: var(--clr-primary-300);
+
+  --ff-primary: "Fraunces", serif;
+  --ff-secondary: "Montserrat", sans-serif;
+
+  --ff-body: var(--ff-secondary);
+  --ff-heading-1: var(--ff-primary);
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  --fw-heading-1: var(--fw-bold);
+  --fw-btn: var(--fw-bold);
+  --fw-body: var(--fw-medium);
+
+  --fs-100: 0.875rem;
+  --fs-200: 2rem;
+
+  --fs-body: var(--fs-100);
+  --fs-btn: var(--fs-100);
+  --fs-heading-1: var(--fs-200);
+  --fs-heading-2: var(--fs-100);
+
+  --size-100: 0.5rem;
+  --size-200: 0.7rem;
+  --size-300: 1rem;
+  --size-400: 2rem;
+}
+
+/* Reset Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font: inherit;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+/* General Styles */
+
+body {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-body);
+  color: var(--clr-text);
+  background-color: var(--clr-bg-body);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  margin-inline: 0.5rem;
+}
+
+.card {
+  background: var(--clr-bg-card);
+  border-radius: var(--size-200);
+  max-width: 25rem;
+  box-shadow: 0.5rem 1rem 5rem hsl(var(--clr-secondary-hsl-400), 0.3);
+}
+
+.image-wrapper img {
+  border-radius: var(--size-200) var(--size-200) 0 0;
+}
+
+.perfume-description {
+  display: grid;
+  padding: var(--size-300);
+}
+
+.heading-1 {
+  color: var(--clr-heading-1);
+  font-size: var(--fs-heading-1);
+  font-family: var(--ff-heading-1);
+  line-height: 1;
+}
+
+.heading-2 {
+  color: var(--clr-heading-2);
+  font-size: var(--fs-heading-2);
+  font-family: var(--ff-heading-2);
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-100);
+  font-size: var(--fs-btn);
+  font-weight: var(--fw-btn);
+  color: var(--clr-btn);
+  background-color: var(--clr-bg-btn);
+  cursor: pointer;
+  padding: var(--size-100);
+  border: none;
+  border-radius: var(--size-100);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-bg-btn-hover);
+}
+
+.spacer-medium {
+  margin-top: var(--size-400);
+}
+
+p[data-max-width] {
+  max-width: 40ch;
+}
+
+[data-current-price] {
+  color: var(--clr-main-price);
+}
+
+[data-previous-price] {
+  font-family: var(--ff-previous-price);
+  font-size: var(--fs-previous-price);
+  text-decoration: line-through;
+}
+
+.flex-group {
+  display: flex;
+  align-items: center;
+  gap: var(--size-300);
+}
+
+.coderSeth {
+  font-size: var(--size-300);
+  text-align: center;
+}
+.coderSeth a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  .btn {
+    padding: var(--size-300);
+  }
+
+  .spacer-small {
+    margin-top: var(--size-200);
+  }
+}
+
+@media (min-width: 800px) {
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 38.5rem;
+  }
+
+  .image-wrapper img {
+    border-radius: var(--size-200) 0 0 var(--size-200);
+  }
+
+  .perfume-description {
+    padding: var(--size-400);
+  }
+
+  .heading-1 {
+    max-width: 10ch;
+  }
+}

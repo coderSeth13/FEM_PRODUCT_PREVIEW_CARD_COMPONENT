@@ -5,8 +5,13 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ### Links
 
+#### Project Links
 - Solution URL: https://github.com/coderSeth13/FEM_PRODUCT_PREVIEW_CARD_COMPONENT.git
 - Live Site URL: https://coderseth13.github.io/FEM_PRODUCT_PREVIEW_CARD_COMPONENT/
+
+#### Social Links
+- Frontend Mentor: https://www.frontendmentor.io/profile/coderSeth13
+- Github: https://github.com/coderSeth13?tab=repositories
 
 ### Screenshot
 ![Screenshot 2023-09-21 at 04-43-46 Product preview card component](https://github.com/coderSeth13/FEM_PRODUCT_PREVIEW_CARD_COMPONENT/assets/145410639/9b1476e1-ade4-4d65-ba6a-fbe666a1cff0)

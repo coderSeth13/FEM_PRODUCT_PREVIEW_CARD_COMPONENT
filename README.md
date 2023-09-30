@@ -10,6 +10,8 @@ This is a solution to the [Product preview card component challenge on Frontend 
 - Live Site URL: https://coderseth13.github.io/FEM_PRODUCT_PREVIEW_CARD_COMPONENT/
 
 #### Social Links
+- Twitter: https://twitter.com/coderSeth13?s=09
+- Instagram: https://www.instagram.com/coderseth13.cs/
 - Frontend Mentor: https://www.frontendmentor.io/profile/coderSeth13
 - Github: https://github.com/coderSeth13?tab=repositories
 
